@@ -210,10 +210,30 @@ nav span{
 
 
 
+/* why chose us section */
+.whychoseus{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-
-
-
+.choseusbox{
+    height: 284px;
+    border-radius: 16px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.boxxi{
+    height: 220px;
+    width: 460px;
+    padding: 30px;
+}
+.boxxi h4{
+    text-align: left;
+    margin: 7px 0px;
+}
 
 
 
@@ -284,5 +304,10 @@ nav span{
      }
      .prea>p{
          width: 90% !important;
+     }
+     .choseusbox{
+         flex-direction: column;
+         height: auto;
+         margin-bottom: 10px;
      }
 }
