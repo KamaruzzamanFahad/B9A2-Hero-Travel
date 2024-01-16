@@ -192,12 +192,44 @@ nav span{
     align-items: center;
     gap: 20px;
     height: 290px;
+    text-align: center;
+    position: relative;
 }
 .chous-box img{
    height: 96%;
 }
 .box-middle img{
     height: 91.9%;
+}
+.maldiv{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    color: #FFF;
+}
+.timgone{
+    transform: translate(-320%, -50%);
+}
+.timgtwo{
+    transform: translate(190%, -50%);
+}
+.timgthree{
+    transform: translate(-420%, -50%);
+}
+.timgfour{
+    transform: translate(-25%, -50%);
+}
+.timgfive{
+    transform: translate(360%, -50%);
+}
+.timgsix{
+    transform: translate(-275%, -50%);
+}
+.timgseven{
+    transform: translate(115%, -50%);
 }
 .prea{
     display: flex;
@@ -212,13 +244,14 @@ nav span{
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .choseusbox{
     height: 284px;
     border-radius: 16px;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -331,8 +364,32 @@ footer hr{
     width: 70%;
     margin: 20px 0px;
 }
-
-
+.fotticonn>i{
+    margin: 0px 10px;
+    font-size: 22px;
+}
+/* extra section  */
+.fitbackcontain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.customerfitb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 248, 248);
+    border-radius: 10px;
+    padding: 20px;
+}
+.customerfitb img{
+    width: 200px;
+}
 
 
 
@@ -422,9 +479,40 @@ footer hr{
          width: auto;
      }
      .captabox{
-        translate: 110px 220px;
+        translate: 190px 220px;
     }
     .newsmideaq{
         width: 85%;
+    }
+    .timgone{
+        transform: translate(-50%, -560%);
+    }
+    .timgtwo{
+        transform: translate(-50% , 450%);
+    }
+    .timgthree{
+        transform: translate(-50% , -1090%);
+    }
+    .timgfour{
+        transform: translate(-50%, -50%);
+    }
+    .timgfive{
+        transform: translate(-50%, 1000%);
+    }
+    .timgsix{
+        transform: translate(-50%, -575%);
+    }
+    .timgseven{
+        transform: translate(-50%, 520%);
+    }
+    .maldiv{
+        font-weight: 700;
+    }
+    .fitbackcontain{
+        flex-direction: column;
+    }
+    .customerfitb{
+        height: 600px;
+        width: 70%;
     }
 }
