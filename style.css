@@ -3,10 +3,8 @@
 *{
     font-family: Mulish;
 }
-body{
-    padding: 20px 100px;
-}
 main{
+    padding: 20px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +119,7 @@ nav span{
 .shadow{
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
     border-radius: 16px;
-    height: 500px;
+    height: 450px;
     width: 1065px;
     display: flex;
     flex-direction: column;
@@ -207,8 +205,6 @@ nav span{
     align-items: center;
     text-align: center;
 }
-
-
 
 /* why chose us section */
 .whychoseus{
@@ -319,6 +315,23 @@ nav span{
 }
 
 
+/* footer design */
+footer{
+    height: 400px;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+footer hr{
+    border: 1px solid rgba(35, 35, 43, 0.1);
+    width: 70%;
+    margin: 20px 0px;
+}
+
 
 
 
@@ -329,9 +342,15 @@ nav span{
 @media only screen and (max-width:600px) {
     body{
         padding: 0px;
-        margin-left: 50px;
+        margin: 0px;
+    }
+    main{
+        padding: 10px 0px;
     }
     /* header */
+    header{
+        margin: 0px 20px !important;
+    }
     nav span{
         display:block;
     }
@@ -362,10 +381,12 @@ nav span{
     }
     .populler-ture-text{
         padding: 0px;
-        width: 100%;
+        width: 88%;
+        margin: 0px 45px;
     }
     .populler-ture-img{
         width: 100%;
+        margin: 0px 45px;
     }
     .populler-ture-img img{
         padding-top: 20px;
@@ -395,12 +416,15 @@ nav span{
          flex-direction: column;
      }
      .newsbox{
-         width: 85%;
+         width: auto;
      }
      .newsimg{
          width: auto;
      }
      .captabox{
         translate: 110px 220px;
+    }
+    .newsmideaq{
+        width: 85%;
     }
 }
