@@ -235,8 +235,87 @@ nav span{
     margin: 7px 0px;
 }
 
+/* newslatter section */
+.Newsletter{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.newsbox{
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    width: 350px;
+    padding: 30px;
+    height: 300px;
+}
+.newsimg{
+    height: 422px;
+    border-radius: 16px;
+    background: url('images/newsimg.png'), lightgray 50%;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 360px;
+}
+.newsbox h4{
+    text-align: start;
+    margin: 5px 0px;
+}
+.newsbox pre{
+    text-align: start;
+    color: #707070;
+}
+.newsbox input{
+    display: block;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    height: 45px;
+    flex-shrink: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.newsbox hr{
+    border: 1px solid  rgba(19, 19, 24, 0.10);;
+}
 
-
+.newsimg img{
+    width: 100%;
+}
+.captabox{
+    height: 100px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    translate: 310px 220px;
+}
+.captabox h5{
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+    margin: 0px;
+}
+.captabox h2{
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #FFF;
+    margin: 0px;
+}
 
 
 
@@ -248,7 +327,8 @@ nav span{
 /* responsive for phone */
 @media only screen and (max-width:600px) {
     body{
-        padding: 5px 20px;
+        padding: 0px;
+        margin-left: 50px;
     }
     /* header */
     nav span{
@@ -310,4 +390,16 @@ nav span{
          height: auto;
          margin-bottom: 10px;
      }
+     .Newsletter{
+         flex-direction: column;
+     }
+     .newsbox{
+         width: 85%;
+     }
+     .newsimg{
+         width: auto;
+     }
+     .captabox{
+        translate: 110px 220px;
+    }
 }
