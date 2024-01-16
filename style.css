@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    font-family: Mulish;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgba(19, 19, 24, 0.70);
+}
+h1{
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #FFF;
+    padding: 0px;
+    margin: 5px 0px;
+}
+h2{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #131318;
+}
+h4{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #131318;
+}
+h6{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #131318;
+}
+button{
+    height: 48px;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 160px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+body{
+    padding: 5px 100px;
+}
+
+/* header section design */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo>img{
+    width: 50px;
+    height: 46px;
+}
+.logo>h2{
+    font-size: 32px;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--Dark-02, #424247);
+}
+nav li{
+    list-style: none;
+}
+.menu{
+    display: none;
+}
+nav span{
+    display: none;
+}
+
+
+/* banner section design */
+.bnr-sec{
+    background-image: url('images/bnr.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    width: 1065px;
+    margin-top: 15px;
+}
+.benner p{
+    color: rgb(224, 224, 224);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.shadow{
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    border-radius: 16px;
+    height: 500px;
+    width: 1065px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.search{
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+}
+.boxa{
+    background: #FFF;
+    border-radius: 8px;
+    height: 50px;
+    width: 160px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.boxa>input{
+    border: none;
+    width: 80%;
+    font-size: 15px;
+}
+.boxa>input:focus{
+    outline: none;
+}
+.boxa button{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FF5400;
+}
+.search i{
+    color: #626262;
+}
+
+
+/* populer ture section */
+.popuplerture{
+    display: flex;
+}
+.populler-ture-text{
+    width: 49%;
+    padding: 15px;
+    padding-right: 55px;
+}
+.populler-ture-img{
+    width: 40%;
+}
+.populler-ture-img img{
+    width: 480px;
+    padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+/* responsive for phone */
+@media only screen and (max-width:600px) {
+    body{
+        padding: 5px 20px;
+    }
+    /* header */
+    nav span{
+        display:block;
+    }
+    nav li{
+        display: none;
+    }
+    .search{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .bnr-sec{
+        height: 750px;
+        width: 500px;
+        background-size: 1900px;
+        background-position: top center;
+    }
+    .shadow{
+        height: 82%;
+        width: auto;
+    }
+    .boxa{
+        width: 90%;
+    }
+    .popuplerture{
+        flex-direction: column;
+    }
+    .populler-ture-text{
+        padding: 0px;
+        width: 100%;
+    }
+    .populler-ture-img{
+        width: 100%;
+    }
+    .populler-ture-img img{
+        padding-top: 20px;
+    }
+}
