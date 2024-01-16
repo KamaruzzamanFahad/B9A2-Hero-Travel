@@ -4,6 +4,9 @@
     font-family: Mulish;
 }
 body{
+    padding: 20px 100px;
+}
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,10 +61,6 @@ button{
     font-size: 17px;
     font-weight: 700;
 }
-body{
-    padding: 5px 100px;
-}
-
 /* header section design */
 header{
     display: flex;
@@ -188,6 +187,36 @@ nav span{
     padding-top: 60px;
 }
 
+/* chose your dest section */
+.chous-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 290px;
+}
+.chous-box img{
+   height: 96%;
+}
+.box-middle img{
+    height: 91.9%;
+}
+.prea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -240,4 +269,20 @@ nav span{
     .populler-ture-img img{
         padding-top: 20px;
     }
+    .chous-box{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .chous-box img{
+        width: 500px;
+        height: 300px;
+     }
+     .box-middle img{
+        width: 500px;
+        height: 300px;
+     }
+     .prea>p{
+         width: 90% !important;
+     }
 }
